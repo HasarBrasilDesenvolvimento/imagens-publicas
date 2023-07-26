@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+
+      a {
+        color: inherit; /* blue colors for links too */
+        text-decoration: inherit; /* no underline */
+      }
+
+      .container {
+        background-color: #eeeeee;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+      }
+
+
+      @media (max-width: 600px) {
+        .btn {
+          max-width: 80%;
+        }
+        .btn-text {
+          font-size: 14px;
+        }
+      }
+
+      @media (min-width: 601px) {
+        .btn {
+          max-width: 50%;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .card {
+          height: 90vh;
+          max-width: 90%;
+        }
+      }
+
+      @media (min-width: 901px) {
+        .card {
+          max-width: 50%;
+          height: 80vh;
+        }
+      }
+
+      .card {
+        position: relative;
+        background-color: #fff;
+        margin: auto;
+      }
+
+      .card-header {
+        background-color: #1c365c;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        column-gap: 15px;
+      }
+      .title {
+        width: 100%;
+        font-size: 26px;
+        font-weight: 500;
+        color: #fff;
+      }
+
+      .card-content {
+        background-color: #fff;
+        padding: 20px;
+      }
+
+      .content-title {
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .content-text {
+        font-size: 15px;
+        line-height: 23px;
+        letter-spacing: 0.1em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .card-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 35px;
+        background-color: #1c365c;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        column-gap: 12px;
+      }
+
+      .content-title.footer {
+        color: #000;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .btn-container {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 35px;
+      }
+
+      .btn {
+        text-decoration: none;
+        background-color: #1c365c;
+        border-radius: 25px;
+        width: 100%;
+        margin: auto;
+        padding: 13px;
+        text-align: center;
+        transition: all 0.1s ease-in;
+      }
+      .btn-text {
+        color: #fff;
+        font-weight: 500;
+      }
+
+      .btn:hover {
+        background-color: #1c365cec;
+      }
+
+      .footer-text {
+        color: #fff;
+        font-weight: 500;
+        font-size: 12px;
+      }
+
+      footer {
+        display: flex;
+      }
+
+      .footer-content {
+        margin: auto;
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" style="position: relative">
+        <div class="card-header">
+          <p class="title">
+            Recuperação de<br />
+            senha
+          </p>
+
+          <img
+            width="160px"
+            src="https://raw.githubusercontent.com/HasarBrasilDesenvolvimento/imagens-publicas/main/logo-header.png"
+            alt="logo-header"
+          />
+        </div>
+        <div class="card-content">
+          <p class="content-title">Olá</p>
+          <p class="content-text">
+            Recebemos sua solicitação de recuperação de senha. Para criar uma
+            nova, clique no botão abaixo:
+          </p>
+          <div class="btn-container">
+            <a class="btn" href="%LINK%" target="_blank">
+              <div class="btn-text">CADASTRAR NOVA SENHA</div>
+            </a>
+          </div>
+          <p class="content-text">
+            Caso não tenha sido você, por gentileza desconsidere esse e-mail. Se
+            precisar de ajuda, conte com a gente!
+          </p>
+
+          <p class="content-title footer">Equipe Hasar Brasil</p>
+        </div>
+        <footer class="card-footer">
+          <div class="footer-content">
+            <img
+              width="23px"
+              src="https://raw.githubusercontent.com/HasarBrasilDesenvolvimento/imagens-publicas/main/logo-footer.png"
+              alt="logo-footer"
+            />
+
+            <p class="footer-text">Hasar Brasil, All rights reserved</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
