@@ -24,10 +24,9 @@
       .container {
         background-color: #eeeeee;
         display: flex;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
       }
-
 
       @media (max-width: 600px) {
         .btn {
@@ -53,7 +52,7 @@
 
       @media (min-width: 901px) {
         .card {
-          max-width: 50%;
+          max-width: 40%;
           height: 80vh;
         }
       }
@@ -72,10 +71,14 @@
         column-gap: 15px;
       }
       .title {
-        width: 100%;
+        width: 70%;
         font-size: 26px;
         font-weight: 500;
         color: #fff;
+      }
+
+      .img {
+        width:30%;
       }
 
       .card-content {
@@ -173,7 +176,7 @@
           </p>
 
           <img
-            width="160px"
+            class="img"
             src="https://raw.githubusercontent.com/HasarBrasilDesenvolvimento/imagens-publicas/main/logo-header.png"
             alt="logo-header"
           />
@@ -199,7 +202,6 @@
         <footer class="card-footer">
           <div class="footer-content">
             <img
-              width="23px"
               src="https://raw.githubusercontent.com/HasarBrasilDesenvolvimento/imagens-publicas/main/logo-footer.png"
               alt="logo-footer"
             />
